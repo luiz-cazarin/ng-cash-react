@@ -1,0 +1,36 @@
+.body {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  font-family: "Inter", "Segoe UI";
+  font-size: 38px;
+  text-align: center;
+}
+.input__area {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.input {
+  width: 420px;
+  padding: 1.5rem 1rem;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  border: solid 1px white;
+  background-color: transparent;
+  color: white;
+}
+.register__button {
+  text-align: center;
+  padding: 1rem 0rem;
+}
+
+@media (max-width: 480px) {
+  .input {
+    width: calc(100vw - 3.5rem);
+  }
+}

@@ -1,0 +1,62 @@
+.body {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title {
+  font-family: "Consolas", "Segoe UI";
+}
+.back_button {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 1rem;
+  padding: 0.4rem 1rem;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+
+.back_button:hover {
+  transition: ease-in-out 0.1s;
+  background-color: rgb(188, 144, 230);
+  color: black;
+}
+
+.tab__transactions {
+  width: 630px;
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  border-radius: 10px;
+  height: 40vh;
+}
+
+.tab__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .tab__transactions {
+    width: 530px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tab__transactions {
+    width: 430px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tab__transactions {
+    width: calc(100vw - 3.5rem);
+  }
+}
